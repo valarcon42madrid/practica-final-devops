@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/my-image
+          images: ${{ vars.DOCKER_USERNAME }}/my-image
 
       # (d) Log in to Docker Hub
       - name: Log in to Docker Hub
